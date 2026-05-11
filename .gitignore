@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# checkpoints & data (large files)
+checkpoints/
+data/lingo/
+data/humanml3d/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# logs
+wandb/
+runs/
+logs/
+*.log
+
+# env
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

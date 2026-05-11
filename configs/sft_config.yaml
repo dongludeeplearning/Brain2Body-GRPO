@@ -1,0 +1,35 @@
+model:
+  t5_model_name: "google/flan-t5-base"
+  vqvae_ckpt: null                # path to pretrained VQ-VAE checkpoint
+  motion_codebook_size: 512
+  motion_token_dim: 256
+  scene_feat_dim: 256
+  traj_bins: 64                   # bins for quantizing each Δpos axis
+  traj_range: 2.0                 # max Δpos magnitude in meters
+  max_plan_tokens: 32
+  max_traj_tokens: 64
+  max_motion_tokens: 196
+
+data:
+  data_root: "data/lingo"
+  train_split: "train"
+  val_split: "val"
+  max_seq_len: 512
+  fps: 30
+  window_size: 48                 # motion frames per segment
+
+training:
+  batch_size: 16
+  num_epochs: 100
+  lr: 1e-4
+  warmup_steps: 500
+  grad_clip: 1.0
+  lambda_traj: 0.5
+  lambda_motion: 1.0
+  log_every: 50
+  save_every: 1000
+  output_dir: "checkpoints/sft"
+
+wandb:
+  project: "brain2body-grpo"
+  name: "sft-run"
