@@ -1,6 +1,6 @@
 # Brain2Body-GRPO
 
-**Program-Driven Human-Scene Interaction via Geometry-Grounded Preference Optimization**
+**Reasoning-Guided Human-Scene Interaction via Geometry-Grounded Preference Optimization**
 
 Given a natural language instruction and a 3D scene, Brain2Body-GRPO generates physically plausible human motion that navigates and interacts with scene objects — including dynamically changing environments.
 
@@ -288,7 +288,7 @@ If you find this work useful, please cite:
 
 ```bibtex
 @misc{brain2body_grpo,
-  title   = {Brain2Body-GRPO: Program-Driven Human-Scene Interaction
+  title   = {Brain2Body-GRPO: Reasoning-Guided Human-Scene Interaction
              via Geometry-Grounded Preference Optimization},
   year    = {2026},
 }
