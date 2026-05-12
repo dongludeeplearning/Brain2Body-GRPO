@@ -254,7 +254,7 @@ Reported metrics:
 ## Project Structure
 
 ```
-cot-hsi/
+Brain2Body-GRPO/
 ├── configs/
 │   ├── sft_config.yaml         # SFT hyperparameters
 │   └── grpo_config.yaml        # GRPO hyperparameters
