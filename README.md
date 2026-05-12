@@ -70,8 +70,8 @@ Scene + Instruction
 git clone https://github.com/dongludeeplearning/cot-hsi.git
 cd cot-hsi
 
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
+conda create -n cot-hsi python=3.10 -y
+conda activate cot-hsi
 
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
